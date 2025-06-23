@@ -1,0 +1,51 @@
+ h1{
+    text-align: center;
+ }
+ .loader {
+   height:200px;
+    width:200px;
+    margin:200px;
+    margin-left:650px;
+   border-radius: 50%;
+    border: 20px solid #13C4A3;
+    border-right:20px solid #32322C;
+    animation-name:loaderAnimation;
+    animation-duration:0.50s;
+    animation-timing-function:ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.loader2{
+    height:200px;
+    width:200px;
+    margin:200px;
+
+    border: 20px solid #e53f7f;
+    border-radius:50%;
+    border-right:20px solid #32322C;
+    margin-left:650px;
+    animation-name: loadme;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes loadme{
+    from{rotate:0deg}
+    to{rotate:360deg}
+}
+
+@keyframes loaderAnimation {
+    from{rotate:0deg}
+    to{rotate:360deg}
+}
+
+.loader{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
